@@ -12,7 +12,8 @@
         <title>Login de Usuarios</title>
     </head>
     <body>
-        <h1 align="center">LOGIN DE USUARIOS</h1>
+        <body background="imagen6.jpg" align="center"> 
+        <h1 align="center" style="color:blue;">LOGIN DE USUARIOS</h1>
         <form action="validar.jsp" method="POST">
             <table border="2" width="20" align="center" cellspacing="30">
                 <tbody>
