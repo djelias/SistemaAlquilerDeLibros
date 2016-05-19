@@ -18,13 +18,20 @@
         <% 
             s_nombre=request.getParameter("fNombre");
             s_password=request.getParameter("fPassword");
-            if((s_nombre.equals("Gabriel") && s_password.equals("VC10014")) || (s_nombre.equals("Diego") && s_password.equals("EA08015")))
+            if(s_nombre.equals("Gabriel") && s_password.equals("VC10014"))
             {
                 response.sendRedirect("menu.jsp");
             }
             else
             {
-                response.sendRedirect("index.jsp");
+                if(s_nombre.equals("Diego") && s_password.equals("EA08015"))
+                {
+                    response.sendRedirect("menu01.jsp");
+                }
+                else
+                {
+                    response.sendRedirect("index.jsp");
+                }
             }
         %>
     </body>

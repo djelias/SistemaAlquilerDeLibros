@@ -9,9 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Menu de Alquiler</title>
+        <title>Menu de Administrador</title>
     </head>
     <body>
-        <h1>Aqui Estara el Menu De Alquiler de Peliculas!!!</h1>
+        <h1>Menu De Alquiler de Peliculas!!!</h1>
+        
     </body>
 </html>
