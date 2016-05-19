@@ -18,7 +18,7 @@
         <% 
             s_nombre=request.getParameter("fNombre");
             s_password=request.getParameter("fPassword");
-            if(s_nombre.equals("Administrador") && s_password.equals("SYP115"))
+            if((s_nombre.equals("Gabriel") && s_password.equals("VC10014")) || (s_nombre.equals("Diego") && s_password.equals("SYP115")))
             {
                 response.sendRedirect("menu.jsp");
             }
