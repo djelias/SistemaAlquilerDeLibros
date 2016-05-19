@@ -12,6 +12,7 @@
         <%
             String s_nombre;
             String s_password;
+            String boton;
         %>
     </head>
     <body>

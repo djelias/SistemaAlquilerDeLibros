@@ -12,7 +12,29 @@
         <title>Menu de Administrador</title>
     </head>
     <body>
-        <h1>Menu De Alquiler de Peliculas!!!</h1>
-        
+        <h1 align="center">Menu para Administrador</h1>
+        <form action="validar.jsp"  method="POST">
+                <table border="0" width="20" align="center" cellspacing="30">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Agregar Alquiler de Pelicula" style='width:250px; height:50px'/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Consultar Peliculas en Existencia" style='width:250px; height:50px'/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Eliminar Alquiler de Peliculas" style='width:250px; height:50px'/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Modificar Alquiler de Peliculas" style='width:250px; height:50px'/></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+        </form>
     </body>
 </html>

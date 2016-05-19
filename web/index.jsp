@@ -12,8 +12,9 @@
         <title>Login de Usuarios</title>
     </head>
     <body>
+        <h1 align="center">LOGIN DE USUARIOS</h1>
         <form action="validar.jsp" method="POST">
-            <table border="1" align="center">
+            <table border="2" width="20" align="center" cellspacing="30">
                 <tbody>
                     <tr>
                         <td>Usuario</td>
@@ -24,8 +25,8 @@
                         <td><input type="password" name="fPassword" value="" /></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td><input type="submit" value="Enter" /></td>
+                        
+                        <td><input type="submit" value="Enter" style='width:150px; height:30px'/></td>
                     </tr>
                 </tbody>
             </table>
