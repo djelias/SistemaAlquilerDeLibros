@@ -13,6 +13,7 @@
             String s_nombre;
             String s_password;
             String boton;
+           
         %>
     </head>
     <body>
@@ -34,6 +35,16 @@
                     response.sendRedirect("index.jsp");
                 }
             }
+           
+         /*
+            String boton=request.getParameter("salir");
+            if(boton.equals("salir"))
+            {
+               String urlDestino = "index.jsp?";           
+               response.sendRedirect(urlDestino);
+            }
+        */
+            
         %>
     </body>
 </html>

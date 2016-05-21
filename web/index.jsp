@@ -9,20 +9,20 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login de Usuarios</title>
+        <title>Login...</title>
     </head>
     <body>
-        <body background="imagen6.jpg" align="center"> 
-        <h1 align="center" style="color:blue;">LOGIN DE USUARIOS</h1>
+        <body background="imagen00.jpg" align="center"> 
+        <h1 align="center" style="color:blue;" front size="10">LOGIN DE ADMINISTRADORES</h1>
         <form action="validar.jsp" method="POST">
             <table border="2" width="20" align="center" cellspacing="30">
                 <tbody>
                     <tr>
-                        <td>Usuario</td>
+                        <td style="color:red">Usuario</td>
                         <td><input type="text" name="fNombre" value="" /></td>
                     </tr>
                     <tr>
-                        <td>Password</td>
+                        <td style="color:red">Password</td>
                         <td><input type="password" name="fPassword" value="" /></td>
                     </tr>
                     <tr>

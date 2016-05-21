@@ -1,6 +1,6 @@
 <%-- 
-    Document   : menu01
-    Created on : May 18, 2016, 11:06:18 PM
+    Document   : catalogo
+    Created on : May 20, 2016, 10:32:25 PM
     Author     : Marvin
 --%>
 
@@ -9,9 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Menu Cliente</title>
+        <title>Catalogo</title>
     </head>
     <body>
-        <h1>Aqui estara el menu numero 2</h1>
+        <h1>Aqui estara el catalogo!!!</h1>
     </body>
 </html>
