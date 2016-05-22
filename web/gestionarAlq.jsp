@@ -14,7 +14,7 @@
     <body>
         
         <body background="libro.jpg" align="center"> 
-            <h1 style="color:white" front size="10">GESTIONAR ALQUILERES DE LIBROS</h1>
+            <h1 style="color:white" front size="10" align="center">GESTIONAR ALQUILERES DE LIBROS</h1>
         <form action="validar.jsp"  method="POST">
                 <table border="0" width="20" align="center" cellspacing="30">
                     <tbody>
@@ -24,15 +24,15 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="submit" value="Consultar Alquiler" style='width:250px; height:50px'/></td>
+                            <td><input type="button" value="Consultar Alquiler" style='width:250px; height:50px' onClick="location.href = 'consultarAlquiler.jsp'"/></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="submit" value="Eliminar Alquiler" style='width:250px; height:50px'/></td>
+                            <td><input type="button" value="Eliminar Alquiler" style='width:250px; height:50px' onClick="location.href = 'eliminarAlquiler.jsp'"/></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="submit" value="Modificar Alquiler" style='width:250px; height:50px'/></td>
+                            <td><input type="button" value="Modificar Alquiler" style='width:250px; height:50px' onClick="location.href = 'modificarAlquiler.jsp'"/></td>
                         </tr>
                         <tr>
                             <td></td>

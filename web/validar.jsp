@@ -20,20 +20,20 @@
         <% 
             s_nombre=request.getParameter("fNombre");
             s_password=request.getParameter("fPassword");
-            if(s_nombre.equals("Gabriel") && s_password.equals("VC10014"))
+            if((s_nombre.equals("Gabriel") && s_password.equals("VC10014"))||(s_nombre.equals("Ricardo") && s_password.equals("ME11022"))||(s_nombre.equals("Diego") && s_password.equals("EA08015"))||(s_nombre.equals("Josimar") && s_password.equals("CF07030"))||(s_nombre.equals("Miguel") && s_password.equals("UR08001")))
             {
                 response.sendRedirect("menu.jsp");
             }
             else
             {
-                if(s_nombre.equals("Diego") && s_password.equals("EA08015"))
+                /*if(s_nombre.equals("Diego") && s_password.equals("EA08015"))
                 {
                     response.sendRedirect("menu01.jsp");
                 }
                 else
-                {
+                {*/
                     response.sendRedirect("index.jsp");
-                }
+               // }
             }
            
          /*

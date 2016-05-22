@@ -19,19 +19,19 @@
                     <tbody>
                         <tr>
                             <td></td>
-                            <td><input type="button" value="Agregar Libro" style='width:250px; height:50px' onClick="location.href = 'agregarAlquiler.jsp'"/></td>
+                            <td><input type="button" value="Agregar Libro" style='width:250px; height:50px' onClick="location.href = 'agregarLibro.jsp'"/></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="submit" value="Consultar Libros en Existencia" style='width:250px; height:50px'/></td>
+                            <td><input type="button" value="Consultar Libros en Existencia" style='width:250px; height:50px' onClick="location.href = 'consultarLibro.jsp'"/></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="submit" value="Eliminar Libro" style='width:250px; height:50px'/></td>
+                            <td><input type="button" value="Eliminar Libro" style='width:250px; height:50px' onClick="location.href = 'eliminarLibro.jsp'"/></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="submit" value="Modificar Datos Libro" style='width:250px; height:50px'/></td>
+                            <td><input type="button" value="Modificar Datos Libro" style='width:250px; height:50px' onClick="location.href = 'modificarLibro.jsp'"/></td>
                         </tr>
                         <tr>
                             <td></td>
