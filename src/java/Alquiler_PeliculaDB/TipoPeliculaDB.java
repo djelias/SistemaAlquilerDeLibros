@@ -6,7 +6,7 @@
 
 package Alquiler_PeliculaDB;
 
-import AlquilerPeliculaModelo.TipoPelicula;
+import AlquilerPeliculaModelo.TipoLibro;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -28,7 +28,7 @@ public class TipoPeliculaDB {
             Statement statement = Conexion.getConexion().createStatement();
             ResultSet resultado = statement.executeQuery(sentenciaSql);
             while (resultado.next()) {
-                TipoPelicula tipoPelicula = new TipoPelicula();
+                TipoLibro tipoPelicula = new TipoLibro();
                 tipoPelicula.titulo = resultado.getString("titulo");
                 tipoPelicula.categoria= resultado.getString("categoria");
                 getTiposPeliculas().add(tipoPelicula);
@@ -38,8 +38,8 @@ public class TipoPeliculaDB {
         }
     }
 
-    public static TipoPelicula obtenerTipoPelicula(String titulo) {
-        TipoPelicula tipoPelicula = null;
+    public static TipoLibro obtenerTipoPelicula(String titulo) {
+        TipoLibro tipoPelicula = null;
         try {
             String sentenciaSql = "SELECT * FROM tipopelicula WHERE tituto = ?";
             PreparedStatement statement
@@ -47,7 +47,7 @@ public class TipoPeliculaDB {
             statement.setString(1, titulo);
             ResultSet resultado = statement.executeQuery();
             while (resultado.next()) {
-                tipoPelicula = new TipoPelicula();
+                tipoPelicula = new TipoLibro();
                 tipoPelicula.titulo = resultado.getString("titulo");
                 tipoPelicula.categoria= resultado.getString("categoria");
                 

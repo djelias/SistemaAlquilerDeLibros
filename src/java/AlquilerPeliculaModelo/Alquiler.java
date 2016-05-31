@@ -13,16 +13,16 @@ package AlquilerPeliculaModelo;
 public class Alquiler {
     
     private String codigo;
-    private Casette codigoCasette;
+    private Libro codigoLibro;
     private Cliente codigoCliente;
     private String fechaAlquiler;
     private String fechaDevolucion;
     private float valorAlquiler;
     private int cantidad;
 
-    public Alquiler(String codigo, Casette codigoCasette, Cliente codigoCliente, String fechaAlquiler, String fechaDevolucion, float valorAlquiler, int cantidad) {
+    public Alquiler(String codigo, Ejemplar codigoEjemplar, Cliente codigoCliente, String fechaAlquiler, String fechaDevolucion, float valorAlquiler, int cantidad) {
         this.codigo = codigo;
-        this.codigoCasette = codigoCasette;
+        this.codigoLibro = codigoLibro;
         this.codigoCliente = codigoCliente;
         this.fechaAlquiler = fechaAlquiler;
         this.fechaDevolucion = fechaDevolucion;
@@ -38,12 +38,12 @@ public class Alquiler {
         this.codigo = codigo;
     }
 
-    public Casette getCodigoCasette() {
-        return codigoCasette;
+    public Libro getCodigoCasette() {
+        return codigoLibro;
     }
 
-    public void setCodigoCasette(Casette codigoCasette) {
-        this.codigoCasette = codigoCasette;
+    public void setCodigoEjemplar(Ejemplar codigoEjemplar) {
+        this.codigoLibro = codigoLibro;
     }
 
     public Cliente getCodigoCliente() {
@@ -88,7 +88,7 @@ public class Alquiler {
 
     @Override
     public String toString() {
-        return "Alquiler{" + "Codigo=" + codigo + ", Codigo Casette=" + codigoCasette + ", Codigo Cliente=" + codigoCliente + ", Fecha Alquiler=" + fechaAlquiler + ", Fecha Devolucion=" + fechaDevolucion + ", Valor Alquiler=" + valorAlquiler + ", Cantidad=" + cantidad + '}';
+        return "Alquiler{" + "Codigo=" + codigo + ", Codigo Casette=" + codigoLibro + ", Codigo Cliente=" + codigoCliente + ", Fecha Alquiler=" + fechaAlquiler + ", Fecha Devolucion=" + fechaDevolucion + ", Valor Alquiler=" + valorAlquiler + ", Cantidad=" + cantidad + '}';
     }
     
     

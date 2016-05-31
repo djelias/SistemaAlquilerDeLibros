@@ -10,17 +10,17 @@ package AlquilerPeliculaModelo;
  *
  * @author Marvin
  */
-public class TipoPelicula {
+public class TipoLibro {
     
     public String titulo;
     public String categoria;
 
-    public TipoPelicula(String titulo, String categoria) {
+    public TipoLibro(String titulo, String categoria) {
         this.titulo = titulo;
         this.categoria = categoria;
     }
 
-    public TipoPelicula() {
+    public TipoLibro() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

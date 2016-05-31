@@ -23,10 +23,6 @@ window.open(url,"","algun parametro que desees");
             <table border="2" width="30" align="center" cellspacing="30" >
                 <tbody>
                     <tr>
-                        <td style="color:white">Cliente</td>
-                        <td><input type="checkbox" name="ID" value="ON" style="font-size:20px"/></td>
-                    </tr>
-                    <tr>
                         <td style="color:white" >ID Cliente</td>
                         <td><input type="text" name="id" value="" style="font-size:20px"/></td>
                     </tr>

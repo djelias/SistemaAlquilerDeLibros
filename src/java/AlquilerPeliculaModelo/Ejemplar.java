@@ -10,26 +10,26 @@ package AlquilerPeliculaModelo;
  *
  * @author Marvin
  */
-public class Casette {
+public class Ejemplar {
     
-    private String codigoCasette;
+    private String codigoLibro;
     private int numeroCopias;
-    private Pelicula codigoPelicula;
+    private Libro codigoPelicula;
     private String formato;
 
-    public Casette(String codigoCasette, int numeroCopias, Pelicula codigoPelicula, String formato) {
-        this.codigoCasette = codigoCasette;
+    public Ejemplar(String codigoCasette, int numeroCopias, Libro codigoPelicula, String formato) {
+        this.codigoLibro = codigoCasette;
         this.numeroCopias = numeroCopias;
         this.codigoPelicula = codigoPelicula;
         this.formato = formato;
     }
 
-    public String getCodigoCasette() {
-        return codigoCasette;
+    public String getCodigoLibro() {
+        return codigoLibro;
     }
 
-    public void setCodigoCasette(String codigoCasette) {
-        this.codigoCasette = codigoCasette;
+    public void setCodigoLibro(String codigoLibro) {
+        this.codigoLibro = codigoLibro;
     }
 
     public int getNumeroCopias() {
@@ -40,11 +40,11 @@ public class Casette {
         this.numeroCopias = numeroCopias;
     }
 
-    public Pelicula getCodigoPelicula() {
+    public Libro getCodigoPelicula() {
         return codigoPelicula;
     }
 
-    public void setCodigoPelicula(Pelicula codigoPelicula) {
+    public void setCodigoPelicula(Libro codigoPelicula) {
         this.codigoPelicula = codigoPelicula;
     }
 
@@ -58,7 +58,7 @@ public class Casette {
 
     @Override
     public String toString() {
-        return "Casette{" + "Codigo Casette=" + codigoCasette + ", Numero Copias=" + numeroCopias + ", Codigo Pelicula=" + codigoPelicula + ", Formato=" + formato + '}';
+        return "Casette{" + "Codigo Casette=" + codigoLibro + ", Numero Copias=" + numeroCopias + ", Codigo Pelicula=" + codigoPelicula + ", Formato=" + formato + '}';
     }
        
 }

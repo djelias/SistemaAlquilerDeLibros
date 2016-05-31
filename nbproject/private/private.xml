@@ -3,15 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Marvin/Desktop/SYPProgetto/SistemaAlquilerPeliculas/web/menu1.jsp</file>
-            <file>file:/C:/Users/Marvin/Desktop/SYPProgetto/SistemaAlquilerPeliculas/web/gestionar.jsp</file>
-            <file>file:/C:/Users/Marvin/Desktop/SYPProgetto/SistemaAlquilerPeliculas/nbproject/build-impl.xml</file>
-            <file>file:/C:/Users/Marvin/Desktop/SYPProgetto/SistemaAlquilerPeliculas/web/gestionarAlq.jsp</file>
-            <file>file:/C:/Users/Marvin/Desktop/SYPProgetto/SistemaAlquilerPeliculas/web/catalogo.jsp</file>
-            <file>file:/C:/Users/Marvin/Desktop/SYPProgetto/SistemaAlquilerPeliculas/web/index.jsp</file>
-            <file>file:/C:/Users/Marvin/Desktop/SYPProgetto/SistemaAlquilerPeliculas/web/agregarAlquiler.jsp</file>
-            <file>file:/C:/Users/Marvin/Desktop/SYPProgetto/SistemaAlquilerPeliculas/web/validar.jsp</file>
-            <file>file:/C:/Users/Marvin/Desktop/SYPProgetto/SistemaAlquilerPeliculas/web/menu.jsp</file>
+            <file>file:/E:/CICLO%20I-2016/SYP/SistemaAlquilerDeLibros/src/java/AlquilerPeliculaModelo/Ejemplar.java</file>
+            <file>file:/E:/CICLO%20I-2016/SYP/SistemaAlquilerDeLibros/src/java/AlquilerPeliculaModelo/Libro.java</file>
+            <file>file:/E:/CICLO%20I-2016/SYP/SistemaAlquilerDeLibros/src/java/Alquiler_PeliculaDB/EjemplarDB.java</file>
         </group>
     </open-files>
 </project-private>
