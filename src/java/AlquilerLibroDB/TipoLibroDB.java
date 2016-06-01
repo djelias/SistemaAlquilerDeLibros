@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package Alquiler_PeliculaDB;
+package AlquilerLibroDB;
 
-import AlquilerPeliculaModelo.TipoLibro;
+import AlquilerLibroModelo.TipoLibro;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -18,7 +18,7 @@ import java.util.List;
  *
  * @author Marvin
  */
-public class TipoPeliculaDB {
+public class TipoLibroDB {
    /* private List<TipoPelicula> tiposPeliculas = new ArrayList<TipoPelicula>();
 
     public void obtenerTiposPeliculas() {

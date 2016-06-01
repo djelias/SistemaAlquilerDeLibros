@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package Alquiler_PeliculaDB;
+package AlquilerLibroDB;
 
 /**
  *
  * @author Marvin
  */
-public class PeliculaDB {
+public class ClienteDB {
     
 }

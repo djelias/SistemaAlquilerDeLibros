@@ -3,23 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Alquiler_LibroDB;
 
+package AlquilerLibroDB;
+
+import AlquilerLibroModelo.Alquiler;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import AlquilerLibroModelo.Alquiler;
 
 /**
  *
  * @author Marvin
  */
 public class AlquilerDB {
-
-    private List<Alquiler> alquileres = new ArrayList<Alquiler>();
+    /*private List<Alquiler> alquileres = new ArrayList<Alquiler>();
 
     public void obtenerAlquileres() {
         alquileres.clear();
@@ -69,14 +69,14 @@ public class AlquilerDB {
     /**
      * @return the carreras
      */
-    public List<Alquiler> getAlquileres() {
+    /*public List<Alquiler> getAlquileres() {
         return alquileres;
-    }
+    }*/
 
     /**
      * @param alquiler the alquileres to set
      */
-    public void setAlquileres(List<Alquiler> alquileres) {
+   /* public void setAlquileres(List<Alquiler> alquileres) {
         this.alquileres = alquileres;
-    }
+    }*/
 }
