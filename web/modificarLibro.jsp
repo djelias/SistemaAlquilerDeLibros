@@ -31,12 +31,10 @@
                         <th style="color: red" style="font-size:20px">Id TipoLibro</th>
                         <th style="color: red" style="font-size:20px">Autor</th>
                         <th style="color: red" style="font-size:20px">Titulo</th>
-                        <th style="color: red" ></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td  ></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -47,17 +45,8 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -68,17 +57,8 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -89,6 +69,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -96,10 +81,14 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -117,32 +106,16 @@
                         <td><input type="text" name="id" value="" style="font-size:20px"/></td>
                     </tr>
                     <tr>
-                        <td style="color:blue">Autor</td>
+                        <td style="color:blue">Id TipoLibro</td>
                         <td><input type="text" name="fechaAlq" value="" style="font-size:20px"/></td>
                     </tr>
                     <tr>
-                        <td style="color:blue">Titulo</td>
+                        <td style="color:blue">Autor</td>
                         <td><input type="text" name="fechaDev" value="" style="font-size:20px"/></td>
                     </tr>
                     <tr>
-                        <td style="color:blue"></td>
+                        <td style="color:blue">Titulo</td>
                         <td><input type="text" name="valorAlq" value="" style="font-size:20px"/></td>
-                    </tr>
-                    <tr>
-                        <td style="color:blue"></td>
-                        <td><input type="text" name="cantidad" value="" style="font-size:20px"/></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td><input type="button" value="Agregar" onClick="newPage('catalogo.jsp')" style='width:250px; height:50px'/></td>

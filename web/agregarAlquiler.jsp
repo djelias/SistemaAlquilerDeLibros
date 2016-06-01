@@ -23,8 +23,12 @@ window.open(url,"","algun parametro que desees");
             <table border="2" width="30" align="center" cellspacing="30" >
                 <tbody>
                     <tr>
-                        <td style="color:white" >ID Cliente</td>
-                        <td><input type="text" name="id" value="" style="font-size:20px"/></td>
+                        <td style="color:white" >Codigo Alquiler</td>
+                        <td><input type="text" name="cod" value="" style="font-size:20px"/></td>
+                    </tr>
+                    <tr>
+                        <td style="color:white">Numero Membresia</td>
+                        <td><input type="text" name="num" value="" style="font-size:20px"/></td>
                     </tr>
                     <tr>
                         <td style="color:white">Fecha Alquiler</td>
@@ -36,27 +40,11 @@ window.open(url,"","algun parametro que desees");
                     </tr>
                     <tr>
                         <td style="color:white">Valor Alquiler</td>
-                        <td><input type="text" name="valorAlq" value="0" style="font-size:20px"/></td>
+                        <td><input type="text" name="valor" value="0" style="font-size:20px"/></td>
                     </tr>
                     <tr>
                         <td style="color:white">Cantidad</td>
                         <td><input type="text" name="cantidad" value="0" style="font-size:20px"/></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td><input type="button" value="Agregar" onClick="newPage('catalogo.jsp')" style='width:250px; height:50px'/></td>

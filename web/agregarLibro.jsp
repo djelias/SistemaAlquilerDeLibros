@@ -34,26 +34,6 @@
                         <td><input type="text" name="valorAlq" value="" style="font-size:20px"/></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
                         <td><input type="button" value="Agregar" onClick="newPage('catalogo.jsp')" style='width:250px; height:50px'/></td>
                         <td><input type="button" value="Regresar" onClick="location.href = 'gestionar.jsp'" style='width:250px; height:50px'/></td>
                     </tr>

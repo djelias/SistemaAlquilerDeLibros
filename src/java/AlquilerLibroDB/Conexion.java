@@ -17,16 +17,16 @@ import java.util.logging.Logger;
  * @author Marvin
  */
 public class Conexion {
-   /* private static Connection con;
-    private static void conectar() {*/
+    private static Connection con;
+    private static void conectar() {
  /*
  * Si la conexión ya se ha realizado, solo devolverá la conexión
  * Si no se ha realizado, realizará la conexión y la devolverá
  */
- /*try {
+ try {
 
  Class.forName("org.postgresql.Driver").newInstance();
- con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Tarea","postgres", "administrador");
+ con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Tarea","SYP", "administrador");
  } catch (SQLException | ClassNotFoundException
  | InstantiationException | IllegalAccessException ex) {
  Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
@@ -39,5 +39,5 @@ public class Conexion {
  conectar();
  }
  return con;
- }*/
+ }
 }

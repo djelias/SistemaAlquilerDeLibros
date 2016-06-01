@@ -19,7 +19,7 @@ import java.util.List;
  * @author Marvin
  */
 public class AlquilerDB {
-    /*private List<Alquiler> alquileres = new ArrayList<Alquiler>();
+    private List<Alquiler> alquileres = new ArrayList<Alquiler>();
 
     public void obtenerAlquileres() {
         alquileres.clear();
@@ -32,10 +32,10 @@ public class AlquilerDB {
                 alquiler.codigo = resultado.getString("codigo");
                 alquiler.fechaAlquiler = resultado.getString("fechaAlquiler");
                 alquiler.fechaDevolucion = resultado.getString("fechaDevolucion");
-                alquiler.valorAlquiler = resultado.getString("valorAlquiler");
-                alquiler.cantidad = resultado.getString("cantidad");
-                alquiler.ejemplar = EjemplarDB.obtenerEjemplar(resultado.getString("codigoEjemplar"));
-                alquiler.cliente = ClienteDB.obtenerCliente(resultado.getString("numeroMembresia"));
+                alquiler.valorAlquiler = Float.parseFloat(resultado.getString("valorAlquiler"));
+                alquiler.cantidad = Integer.parseInt(resultado.getString("cantidad"));
+                //alquiler.ejemplar = EjemplarDB.obtenerEjemplar(resultado.getString("codigoEjemplar"));
+                //alquiler.cliente = ClienteDB.obtenerCliente(resultado.getString("numeroMembresia"));
                 alquileres.add(alquiler);
             }
         } catch (SQLException ex) {
@@ -69,14 +69,14 @@ public class AlquilerDB {
     /**
      * @return the carreras
      */
-    /*public List<Alquiler> getAlquileres() {
+    public List<Alquiler> getAlquileres() {
         return alquileres;
-    }*/
+    }
 
     /**
      * @param alquiler the alquileres to set
      */
-   /* public void setAlquileres(List<Alquiler> alquileres) {
+    public void setAlquileres(List<Alquiler> alquileres) {
         this.alquileres = alquileres;
-    }*/
+    }
 }

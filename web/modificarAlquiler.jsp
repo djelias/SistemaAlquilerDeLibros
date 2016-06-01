@@ -28,6 +28,7 @@
                 <thead>
                     <tr>
                         <th style="color: skyblue">Codigo Alquiler</th>
+                        <th style="color: skyblue">Numero Membresia</th>
                         <th style="color: skyblue" style="font-size:20px">Fecha Alquiler</th>
                         <th style="color: skyblue" style="font-size:20px">Fecha Devolucion</th>
                         <th style="color: skyblue" style="font-size:20px">Valor Alquiler</th>
@@ -36,7 +37,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td  ></td>
+                        <td></td>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -48,22 +50,10 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -76,12 +66,6 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -90,6 +74,15 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -97,8 +90,26 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
                     </tr>
                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -113,12 +124,12 @@
                         <td> <table border="2" width="30" align="center" cellspacing="30" >
                 <tbody>
                     <tr>
-                        <td style="color:springgreen">Cliente</td>
-                        <td><input type="checkbox" name="ID" value="ON" style="font-size:20px"/></td>
+                        <td style="color:springgreen" >Codigo Alquiler</td>
+                        <td><input type="text" name="cod" value="" style="font-size:20px"/></td>
                     </tr>
                     <tr>
-                        <td style="color:springgreen" >ID Cliente</td>
-                        <td><input type="text" name="id" value="" style="font-size:20px"/></td>
+                        <td style="color:springgreen">Numero Membresia</td>
+                        <td><input type="text" name="num" value="" style="font-size:20px"/></td>
                     </tr>
                     <tr>
                         <td style="color:springgreen">Fecha Alquiler</td>
@@ -130,23 +141,11 @@
                     </tr>
                     <tr>
                         <td style="color:springgreen">Valor Alquiler</td>
-                        <td><input type="text" name="valorAlq" value="0" style="font-size:20px"/></td>
+                        <td><input type="text" name="valor" value="0" style="font-size:20px"/></td>
                     </tr>
                     <tr>
                         <td style="color:springgreen">Cantidad</td>
                         <td><input type="text" name="cantidad" value="0" style="font-size:20px"/></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td><input type="button" value="Agregar" onClick="newPage('catalogo.jsp')" style='width:250px; height:50px'/></td>

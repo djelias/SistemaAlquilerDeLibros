@@ -12,13 +12,16 @@ package AlquilerLibroModelo;
  */
 public class Alquiler {
     
-    private String codigo;
+    public String codigo;
     private Libro codigoLibro;
     private Cliente codigoCliente;
-    private String fechaAlquiler;
-    private String fechaDevolucion;
-    private float valorAlquiler;
-    private int cantidad;
+    public String fechaAlquiler;
+    public String fechaDevolucion;
+    public float valorAlquiler;
+    public int cantidad;
+
+    public Alquiler() {
+    }
 
     public Alquiler(String codigo, Ejemplar codigoEjemplar, Cliente codigoCliente, String fechaAlquiler, String fechaDevolucion, float valorAlquiler, int cantidad) {
         this.codigo = codigo;
