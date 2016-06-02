@@ -91,7 +91,10 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="button" value="Ver Detalle" /></td>
+                                        <th style="color:white" >ID: 0100 </th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" value="Ver Detalle" align="center" onClick="location.href = 'marketing1.jsp'"/></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -107,8 +110,11 @@
                                             </div>
                                         </td>
                                     </tr>
+                                     <tr>
+                                        <th style="color:white" >ID: 1000 </th>
+                                    </tr>
                                     <tr>
-                                        <td><input type="button" value="Ver Detalle" /></td>
+                                        <td><input type="button" value="Ver Detalle" align="center" onClick="location.href = 'ficcion1.jsp'"/></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -128,7 +134,10 @@
                                             </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="button" value="Ver Detalle" /></td>
+                                        <th style="color:white" >ID: 0001 </th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" value="Ver Detalle" align="center" onClick="location.href = 'informatica1.jsp'"/></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -145,18 +154,16 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="button" value="Ver Detalle" /></td>
+                                        <th style="color:white" >ID: 0101 </th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" value="Ver Detalle" align="center" onClick="location.href = 'marketing2.jsp'"/></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </td>
                         <!--CIENCIA FICCION!-->
                         <td><table border="5" cellspacing="10">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                    </tr>
-                                </thead>
                                 <tbody>
                                     <tr>
                                         <td><!--img src="libro7.jpg" width="249" height="426" alt="libro7"/!-->
@@ -167,7 +174,10 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="button" value="Ver Detalle" /></td>
+                                        <th style="color:white" >ID: 1001 </th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" value="Ver Detalle" align="center" onClick="location.href = 'ficcion2.jsp'"/></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -182,12 +192,15 @@
                                         <td><!--img src="libro2.jpg" width="298" height="399" alt="libro2"/!-->
                                             <div style='text-align:center;'>
                                                 <!--div class="zoom">Efecto de zoom con CSS3</div!-->
-                                                <img class="zoom" src="lib1.jpg" align="center"/>
+                                                <img class="zoom" src="lib2.jpg" align="center"/>
                                             </div>
                                             </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="button" value="Ver Detalle" /></td>
+                                        <th style="color:white" >ID: 0010 </th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" value="Ver Detalle" align="center" onClick="location.href = 'informatica3.jsp'"/></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -204,18 +217,16 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="button" value="Ver Detalle" /></td>
+                                        <th style="color:white" >ID: 0110 </th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" value="Ver Detalle" align="center" onClick="location.href = 'marketing3.jsp'"/></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </td>
                         <!--CIENCIA FICCION!-->
                         <td><table border="5" cellspacing="10">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                    </tr>
-                                </thead>
                                 <tbody>
                                     <tr>
                                         <td><!--img src="libro7.jpg" width="249" height="426" alt="libro7"/!-->
@@ -226,7 +237,10 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="button" value="Ver Detalle" /></td>
+                                        <th style="color:white" >ID: 1010 </th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" value="Ver Detalle" align="center" onClick="location.href = 'ficcion3.jsp'"/></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -246,7 +260,10 @@
                                             </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="button" value="Ver Detalle" /></td>
+                                        <th style="color:white" >ID: 0011 </th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" value="Ver Detalle" align="center" onClick="location.href = 'informatica4.jsp'"/></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -263,18 +280,16 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="button" value="Ver Detalle" /></td>
+                                        <th style="color:white" >ID: 0111 </th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" value="Ver Detalle" align="center" onClick="location.href = 'marketing4.jsp'"/></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </td>
                         <!--CIENCIA FICCION!-->
                         <td><table border="5" cellspacing="10">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                    </tr>
-                                </thead>
                                 <tbody>
                                     <tr>
                                         <td><!--img src="libro7.jpg" width="249" height="426" alt="libro7"/!-->
@@ -285,7 +300,10 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="button" value="Ver Detalle" /></td>
+                                        <th style="color:white" >ID: 1011 </th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" value="Ver Detalle" align="center" onClick="location.href = 'ficcion4.jsp'"/></td>
                                     </tr>
                                 </tbody>
                             </table>
