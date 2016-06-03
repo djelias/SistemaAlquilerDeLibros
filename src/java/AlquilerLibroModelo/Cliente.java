@@ -12,7 +12,7 @@ package AlquilerLibroModelo;
  */
 public class Cliente {
     
-    public int numeroMembresia;
+    public String numeroMembresia;
     public String nombre;
     public String direccion;
     public String telefono;
@@ -21,18 +21,18 @@ public class Cliente {
         
     }
 
-    public Cliente(int numeroMembresia, String nombre, String direccion, String telefono) {
+    public Cliente(String numeroMembresia, String nombre, String direccion, String telefono) {
         this.numeroMembresia = numeroMembresia;
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
     }
 
-    public int getNumeroMembresia() {
+    public String getNumeroMembresia() {
         return numeroMembresia;
     }
 
-    public void setNumeroMembresia(int numeroMembresia) {
+    public void setNumeroMembresia(String numeroMembresia) {
         this.numeroMembresia = numeroMembresia;
     }
 
@@ -62,7 +62,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" + "Numero Membresia=" + numeroMembresia + ", Nombre=" + nombre + ", Direccion=" + direccion + ", Telefono=" + telefono + '}';
+        return "Cliente[" + "Numero Membresia:" + numeroMembresia + ", Nombre:" + nombre + ", Direccion:" + direccion + ", Telefono:" + telefono + ']';
     }
     
     

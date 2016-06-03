@@ -29,7 +29,7 @@ public class ClienteDB {
             ResultSet resultado = statement.executeQuery(sentenciaSql);
             while (resultado.next()) {
                 Cliente cliente = new Cliente();
-                cliente.numeroMembresia = Integer.parseInt(resultado.getString("numeromembresia"));
+                cliente.numeroMembresia = resultado.getString("numeromembresia");
                 cliente.nombre = resultado.getString("nombrecliente");
                 cliente.direccion = resultado.getString("direccioncliente");
                 cliente.telefono = resultado.getString("telefonocliente");
@@ -48,7 +48,8 @@ public class ClienteDB {
              statement.setString(1, numeromembresia);             
              ResultSet resultado = statement.executeQuery();            
              while (resultado.next()) {                 
-                 cliente = new Cliente();                 
+                 cliente = new Cliente();  
+                 cliente.numeroMembresia=resultado.getString("numeromembresia");
                  cliente.nombre = resultado.getString("nombrecliente");                 
                  cliente.direccion = resultado.getString("direccioncliente");
                  cliente.telefono = resultado.getString("telefonocliente");
@@ -59,7 +60,7 @@ public class ClienteDB {
          return cliente;     
      } 
 
-    public boolean guardar(int numeromembresia, String nombrecliente, String direccioncliente, String telefonocliente) {
+    public boolean guardar(String numeromembresia, String nombrecliente, String direccioncliente, String telefonocliente) {
         boolean guardado = true;
         try {
             String sentenciaSql;
@@ -67,7 +68,7 @@ public class ClienteDB {
             sentenciaSql = "INSERT INTO cliente(numeromembresia, nombrecliente, direccioncliente, telefonocliente) VALUES "
                     + "(?,?,?,?)";
             preparedStatement = Conexion.getConexion().prepareStatement(sentenciaSql);
-            preparedStatement.setInt(1, numeromembresia);
+            preparedStatement.setString(1, numeromembresia);
             preparedStatement.setString(2, nombrecliente);
             preparedStatement.setString(3, direccioncliente);
             preparedStatement.setString(4, telefonocliente);

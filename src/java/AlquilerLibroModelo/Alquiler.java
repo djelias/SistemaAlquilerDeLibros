@@ -17,13 +17,13 @@ public class Alquiler {
     public Cliente numeroMembresia;
     public String fechaAlquiler;
     public String fechaDevolucion;
-    public Double valorAlquiler;
-    public int cantidad;
+    public String valorAlquiler;
+    public String cantidad;
 
     public Alquiler() {
     }
 
-    public Alquiler(String codigo, Ejemplar codigoEjemplar, Cliente numeroMembresia, String fechaAlquiler, String fechaDevolucion, Double valorAlquiler, int cantidad) {
+    public Alquiler(String codigo, Ejemplar codigoEjemplar, Cliente numeroMembresia, String fechaAlquiler, String fechaDevolucion, String valorAlquiler, String cantidad) {
         this.codigo = codigo;
         this.codigoLibro = codigoLibro;
         this.numeroMembresia = numeroMembresia;
@@ -41,11 +41,11 @@ public class Alquiler {
         this.codigo = codigo;
     }
 
-    public Ejemplar getCodigoCasette() {
+    public Ejemplar getCodigoLibro() {
         return codigoLibro;
     }
 
-    public void setCodigoEjemplar(Ejemplar codigoEjemplar) {
+    public void setCodigoLibro(Ejemplar codigoLibro) {
         this.codigoLibro = codigoLibro;
     }
 
@@ -73,26 +73,26 @@ public class Alquiler {
         this.fechaDevolucion = fechaDevolucion;
     }
 
-    public Double getValorAlquiler() {
+    public String getValorAlquiler() {
         return valorAlquiler;
     }
 
-    public void setValorAlquiler(Double valorAlquiler) {
+    public void setValorAlquiler(String valorAlquiler) {
         this.valorAlquiler = valorAlquiler;
     }
 
-    public int getCantidad() {
+    public String getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(String cantidad) {
         this.cantidad = cantidad;
     }
 
     @Override
     public String toString() {
-        return "Alquiler{" + "Codigo=" + codigo + ", Codigo Casette=" + codigoLibro + ", Codigo Cliente=" + numeroMembresia + ", Fecha Alquiler=" + fechaAlquiler + ", Fecha Devolucion=" + fechaDevolucion + ", Valor Alquiler=" + valorAlquiler + ", Cantidad=" + cantidad + '}';
+        return "Alquiler{" + "codigo=" + codigo + ", codigoLibro=" + codigoLibro + ", numeroMembresia=" + numeroMembresia + ", fechaAlquiler=" + fechaAlquiler + ", fechaDevolucion=" + fechaDevolucion + ", valorAlquiler=" + valorAlquiler + ", cantidad=" + cantidad + '}';
     }
-    
+
     
 }

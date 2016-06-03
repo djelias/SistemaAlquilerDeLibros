@@ -26,7 +26,7 @@ public class Conexion {
  try {
 
  Class.forName("org.postgresql.Driver").newInstance();
- con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres","postgres", "admin");
+ con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/SYP","postgres", "administrador");
  } catch (SQLException | ClassNotFoundException
  | InstantiationException | IllegalAccessException ex) {
  Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);

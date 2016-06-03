@@ -16,26 +16,24 @@
     if (request.getParameter("cmd") == null) {
         //clienteDB.obtenerClientes();
         alquilerDB.obtenerAlquileres();
+    }else 
+    {
+        out.print("<strong>Error al Recuperar los datos de la base</strong>");
     }
 %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Consulta Alquiler</title>
-        <script type="text/javascript">
-            function asignarAccion(accion) {
-                document.forms['alquilerfrm'].cmd.value = accion;
-            }
-        </script>
     </head>
     
     <body background="imagen9.jpg" align="center">
         <h1>TABLA DE ALQUILERES EN EL SISTEMA</h1>
-        <form action="validar.jsp" method="POST" id="alquilerfrm">
-            <table border="2" width="70" align="center" cellspacing="30">
+            <table border="1" align="center" >
                 <thead>
                     <tr>
                         <th style="color: red">Codigo Alquiler</th>
+                        <th style="color: red">Numero Membresia</th>
                         <th style="color: red" style="font-size:20px">Fecha Alquiler</th>
                         <th style="color: red" style="font-size:20px">Fecha Devolucion</th>
                         <th style="color: red" style="font-size:20px">Valor Alquiler</th>
@@ -48,22 +46,17 @@
                     %>
                     <tr>
                         <td><%=alquiler.codigo%></td>
+                        <td><%=alquiler.numeroMembresia%></td>
                         <td><%=alquiler.fechaAlquiler%></td>
                         <td><%=alquiler.fechaDevolucion%></td>
-                        <td><%=alquiler.cantidad%></td>
                         <td><%=alquiler.valorAlquiler%></td>
-                       
+                        <td><%=alquiler.cantidad%></td>
                         
                     </tr>
                     <%
                         }
                     %>
-                    <tr>
-                        <td><input type="button" value="back" onClick="location.href = 'gestionarAlq.jsp'" style='width:150px; height:30px'/></td>
-                    </tr>
                 </tbody>
             </table>
-
-        </form>
     </body>
 </html>

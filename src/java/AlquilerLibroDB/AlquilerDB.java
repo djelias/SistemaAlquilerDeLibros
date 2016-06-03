@@ -29,11 +29,13 @@ public class AlquilerDB {
             ResultSet resultado = statement.executeQuery(sentenciaSql);
             while (resultado.next()) {
                 Alquiler alquiler = new Alquiler();
-                alquiler.codigo = resultado.getString("codigo");
+                alquiler.codigo = resultado.getString("codigoalquiler");
+                alquiler.numeroMembresia=ClienteDB.obtenerCliente(resultado.getString("numeromembresia"));
                 alquiler.fechaAlquiler = resultado.getString("fechaAlquiler");
                 alquiler.fechaDevolucion = resultado.getString("fechaDevolucion");
-                alquiler.cantidad = Integer.parseInt(resultado.getString("cantidad"));
-                alquiler.valorAlquiler = Double.parseDouble(resultado.getString("valorAlquiler"));
+                alquiler.valorAlquiler = resultado.getString("valorAlquiler");
+                alquiler.cantidad = resultado.getString("cantidad");
+                
                 
                 //alquiler.ejemplar = EjemplarDB.obtenerEjemplar(resultado.getString("codigoEjemplar"));
                 //alquiler.cliente = ClienteDB.obtenerCliente(resultado.getString("numeroMembresia"));
@@ -53,12 +55,13 @@ public class AlquilerDB {
              statement.setString(1, codigoalquiler);             
              ResultSet resultado = statement.executeQuery();            
              while (resultado.next()) {                 
-                 alquiler = new Alquiler();                 
+                 alquiler = new Alquiler();       
+                 alquiler.codigo=resultado.getString("codigoalquiler");
                  alquiler.numeroMembresia = ClienteDB.obtenerCliente(resultado.getString("numeromembresia"));
                  alquiler.fechaAlquiler = resultado.getString("fechaalquiler");
                  alquiler.fechaDevolucion = resultado.getString("fechadevolucion");
-                 alquiler.valorAlquiler = Double.parseDouble(resultado.getString("valoralquiler"));
-                 alquiler.cantidad = Integer.parseInt(resultado.getString("cantidad"));
+                 alquiler.valorAlquiler = resultado.getString("valoralquiler");
+                 alquiler.cantidad = resultado.getString("cantidad");
                  
              }  
         } catch (SQLException ex) {             
