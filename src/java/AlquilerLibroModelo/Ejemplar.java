@@ -12,53 +12,62 @@ package AlquilerLibroModelo;
  */
 public class Ejemplar {
     
-    private String codigoLibro;
-    private int numeroCopias;
-    private Libro codigoPelicula;
-    private String formato;
+    public String codigoEjemplar;
+    public String numeroCopias;
+    public Libro codigoL;
+    public String descripcion;
 
-    public Ejemplar(String codigoCasette, int numeroCopias, Libro codigoPelicula, String formato) {
-        this.codigoLibro = codigoCasette;
+    public Ejemplar(String codigoEjemplar, String numeroCopias, Libro codigoL, String descripcion) {
+        this.codigoEjemplar = codigoEjemplar;
         this.numeroCopias = numeroCopias;
-        this.codigoPelicula = codigoPelicula;
-        this.formato = formato;
+        this.codigoL = codigoL;
+        this.descripcion = descripcion;
     }
 
-    public String getCodigoLibro() {
-        return codigoLibro;
+    public Ejemplar() {
     }
 
-    public void setCodigoLibro(String codigoLibro) {
-        this.codigoLibro = codigoLibro;
+    public String getCodigoEjemplar() {
+        return codigoEjemplar;
     }
 
-    public int getNumeroCopias() {
+    public void setCodigoEjemplar(String codigoEjemplar) {
+        this.codigoEjemplar = codigoEjemplar;
+    }
+
+    public String getNumeroCopias() {
         return numeroCopias;
     }
 
-    public void setNumeroCopias(int numeroCopias) {
+    public void setNumeroCopias(String numeroCopias) {
         this.numeroCopias = numeroCopias;
     }
 
-    public Libro getCodigoPelicula() {
-        return codigoPelicula;
+    public Libro getCodigoL() {
+        return codigoL;
     }
 
-    public void setCodigoPelicula(Libro codigoPelicula) {
-        this.codigoPelicula = codigoPelicula;
+    public void setCodigoL(Libro codigoL) {
+        this.codigoL = codigoL;
     }
 
-    public String getFormato() {
-        return formato;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setFormato(String formato) {
-        this.formato = formato;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     @Override
     public String toString() {
-        return "Casette{" + "Codigo Casette=" + codigoLibro + ", Numero Copias=" + numeroCopias + ", Codigo Pelicula=" + codigoPelicula + ", Formato=" + formato + '}';
+        return "Ejemplar{" + "codigoEjemplar=" + codigoEjemplar + ", numeroCopias=" + numeroCopias + ", codigoL=" + codigoL + ", descripcion=" + descripcion + '}';
     }
-       
+
+   
+    
+    
+   
+
+    
 }

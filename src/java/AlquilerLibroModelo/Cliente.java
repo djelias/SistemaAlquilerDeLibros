@@ -12,10 +12,14 @@ package AlquilerLibroModelo;
  */
 public class Cliente {
     
-    private int numeroMembresia;
-    private String nombre;
-    private String direccion;
-    private String telefono;
+    public int numeroMembresia;
+    public String nombre;
+    public String direccion;
+    public String telefono;
+    
+    public Cliente(){
+        
+    }
 
     public Cliente(int numeroMembresia, String nombre, String direccion, String telefono) {
         this.numeroMembresia = numeroMembresia;

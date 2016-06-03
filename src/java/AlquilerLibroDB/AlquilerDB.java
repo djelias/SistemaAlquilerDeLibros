@@ -32,8 +32,9 @@ public class AlquilerDB {
                 alquiler.codigo = resultado.getString("codigo");
                 alquiler.fechaAlquiler = resultado.getString("fechaAlquiler");
                 alquiler.fechaDevolucion = resultado.getString("fechaDevolucion");
-                alquiler.valorAlquiler = Float.parseFloat(resultado.getString("valorAlquiler"));
                 alquiler.cantidad = Integer.parseInt(resultado.getString("cantidad"));
+                alquiler.valorAlquiler = Double.parseDouble(resultado.getString("valorAlquiler"));
+                
                 //alquiler.ejemplar = EjemplarDB.obtenerEjemplar(resultado.getString("codigoEjemplar"));
                 //alquiler.cliente = ClienteDB.obtenerCliente(resultado.getString("numeroMembresia"));
                 alquileres.add(alquiler);
@@ -43,6 +44,29 @@ public class AlquilerDB {
         }
     }
 
+    
+    public static Alquiler obtenerAlquiler(String codigoalquiler) {         
+         Alquiler alquiler = null;         
+         try {             
+             String sentenciaSql = "SELECT * FROM alquiler WHERE codigoalquiler = ?";             
+             PreparedStatement statement = Conexion.getConexion().prepareStatement(sentenciaSql);             
+             statement.setString(1, codigoalquiler);             
+             ResultSet resultado = statement.executeQuery();            
+             while (resultado.next()) {                 
+                 alquiler = new Alquiler();                 
+                 alquiler.numeroMembresia = ClienteDB.obtenerCliente(resultado.getString("numeromembresia"));
+                 alquiler.fechaAlquiler = resultado.getString("fechaalquiler");
+                 alquiler.fechaDevolucion = resultado.getString("fechadevolucion");
+                 alquiler.valorAlquiler = Double.parseDouble(resultado.getString("valoralquiler"));
+                 alquiler.cantidad = Integer.parseInt(resultado.getString("cantidad"));
+                 
+             }  
+        } catch (SQLException ex) {             
+            ex.printStackTrace();         
+        }         
+         return alquiler;     
+     }
+    
     public boolean guardar(String codigo, String fechaAlquiler, String fechaDevolucion, String valorAlquiler, String cantidad, String codigoEjemplar, String numeroMembresia) {
         boolean guardado = true;
         try {

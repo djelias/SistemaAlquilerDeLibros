@@ -40,6 +40,26 @@ public class LibroDB {
             ex.printStackTrace();
         }
     }
+    
+    public static Libro obtenerLibro(String codigolibro) {         
+         Libro libro = null;         
+         try {             
+             String sentenciaSql = "SELECT * FROM libro WHERE codigolibro = ?";             
+             PreparedStatement statement = Conexion.getConexion().prepareStatement(sentenciaSql);             
+             statement.setString(1, codigolibro);             
+             ResultSet resultado = statement.executeQuery();            
+             while (resultado.next()) {                 
+                 libro = new Libro();                 
+                 libro.codigoL = resultado.getString("codigolibro");                 
+                 libro.idTipo = TipoLibroDB.obtenerTipoLibro(resultado.getString("nomeditorial")); 
+                 libro.autor=resultado.getString("autor");
+                 libro.titulo=resultado.getString("titulo");
+             }  
+        } catch (SQLException ex) {             
+            ex.printStackTrace();         
+        }         
+         return libro;     
+     } 
 
     public boolean guardar(String codigoL, String idtipolibro, String autor, String titulo) {
         boolean guardado = true;

@@ -13,20 +13,20 @@ package AlquilerLibroModelo;
 public class Alquiler {
     
     public String codigo;
-    private Libro codigoLibro;
-    private Cliente codigoCliente;
+    public Ejemplar codigoLibro;
+    public Cliente numeroMembresia;
     public String fechaAlquiler;
     public String fechaDevolucion;
-    public float valorAlquiler;
+    public Double valorAlquiler;
     public int cantidad;
 
     public Alquiler() {
     }
 
-    public Alquiler(String codigo, Ejemplar codigoEjemplar, Cliente codigoCliente, String fechaAlquiler, String fechaDevolucion, float valorAlquiler, int cantidad) {
+    public Alquiler(String codigo, Ejemplar codigoEjemplar, Cliente numeroMembresia, String fechaAlquiler, String fechaDevolucion, Double valorAlquiler, int cantidad) {
         this.codigo = codigo;
         this.codigoLibro = codigoLibro;
-        this.codigoCliente = codigoCliente;
+        this.numeroMembresia = numeroMembresia;
         this.fechaAlquiler = fechaAlquiler;
         this.fechaDevolucion = fechaDevolucion;
         this.valorAlquiler = valorAlquiler;
@@ -41,7 +41,7 @@ public class Alquiler {
         this.codigo = codigo;
     }
 
-    public Libro getCodigoCasette() {
+    public Ejemplar getCodigoCasette() {
         return codigoLibro;
     }
 
@@ -49,12 +49,12 @@ public class Alquiler {
         this.codigoLibro = codigoLibro;
     }
 
-    public Cliente getCodigoCliente() {
-        return codigoCliente;
+    public Cliente getNumeroMembresia() {
+        return numeroMembresia;
     }
 
-    public void setCodigoCliente(Cliente codigoCliente) {
-        this.codigoCliente = codigoCliente;
+    public void setNumeroMembresia(Cliente numeroMembresia) {
+        this.numeroMembresia = numeroMembresia;
     }
 
     public String getFechaAlquiler() {
@@ -73,11 +73,11 @@ public class Alquiler {
         this.fechaDevolucion = fechaDevolucion;
     }
 
-    public float getValorAlquiler() {
+    public Double getValorAlquiler() {
         return valorAlquiler;
     }
 
-    public void setValorAlquiler(float valorAlquiler) {
+    public void setValorAlquiler(Double valorAlquiler) {
         this.valorAlquiler = valorAlquiler;
     }
 
@@ -91,7 +91,7 @@ public class Alquiler {
 
     @Override
     public String toString() {
-        return "Alquiler{" + "Codigo=" + codigo + ", Codigo Casette=" + codigoLibro + ", Codigo Cliente=" + codigoCliente + ", Fecha Alquiler=" + fechaAlquiler + ", Fecha Devolucion=" + fechaDevolucion + ", Valor Alquiler=" + valorAlquiler + ", Cantidad=" + cantidad + '}';
+        return "Alquiler{" + "Codigo=" + codigo + ", Codigo Casette=" + codigoLibro + ", Codigo Cliente=" + numeroMembresia + ", Fecha Alquiler=" + fechaAlquiler + ", Fecha Devolucion=" + fechaDevolucion + ", Valor Alquiler=" + valorAlquiler + ", Cantidad=" + cantidad + '}';
     }
     
     

@@ -2,6 +2,7 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+ *idtipolibro categoria idioma
  */
 
 package AlquilerLibroDB;
@@ -19,50 +20,51 @@ import java.util.List;
  * @author Marvin
  */
 public class TipoLibroDB {
-   /* private List<TipoPelicula> tiposPeliculas = new ArrayList<TipoPelicula>();
+   private List<TipoLibro> tiposLibros = new ArrayList<TipoLibro>();
 
-    public void obtenerTiposPeliculas() {
-        getTiposPeliculas().clear();
+    public void obtenerTiposLibros() {
+        getTiposLibros().clear();
         try {
-            String sentenciaSql = "SELECT * FROM tipopelicula";
+            String sentenciaSql = "SELECT * FROM tipolibro";
             Statement statement = Conexion.getConexion().createStatement();
             ResultSet resultado = statement.executeQuery(sentenciaSql);
             while (resultado.next()) {
-                TipoLibro tipoPelicula = new TipoLibro();
-                tipoPelicula.titulo = resultado.getString("titulo");
-                tipoPelicula.categoria= resultado.getString("categoria");
-                getTiposPeliculas().add(tipoPelicula);
+                TipoLibro tipoLibro = new TipoLibro();
+                tipoLibro.idTipoLibro = resultado.getString("idtipolibro");
+                tipoLibro.categoria = resultado.getString("categoria");
+                tipoLibro.idioma = resultado.getString("idioma");
+                getTiposLibros().add(tipoLibro);
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
     }
 
-    public static TipoLibro obtenerTipoPelicula(String titulo) {
-        TipoLibro tipoPelicula = null;
+    public static TipoLibro obtenerTipoLibro(String idTipoLibro) {
+        TipoLibro tipoLibro = null;
         try {
-            String sentenciaSql = "SELECT * FROM tipopelicula WHERE tituto = ?";
-            PreparedStatement statement
-                    = Conexion.getConexion().prepareStatement(sentenciaSql);
-            statement.setString(1, titulo);
+            String sentenciaSql = "SELECT * FROM tipolibro WHERE idtipolibro = ?";
+            PreparedStatement statement = Conexion.getConexion().prepareStatement(sentenciaSql);
+            statement.setString(1, idTipoLibro);
             ResultSet resultado = statement.executeQuery();
             while (resultado.next()) {
-                tipoPelicula = new TipoLibro();
-                tipoPelicula.titulo = resultado.getString("titulo");
-                tipoPelicula.categoria= resultado.getString("categoria");
+                tipoLibro = new TipoLibro();
+                tipoLibro.idTipoLibro = resultado.getString("idtipolibro");
+                tipoLibro.categoria = resultado.getString("categoria");
+                tipoLibro.idioma = resultado.getString("idioma");
                 
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
-        return tipoPelicula;
+        return tipoLibro;
     }
 
-    public List<TipoPelicula> getTiposPeliculas() {
-        return tiposPeliculas;
+    public List<TipoLibro> getTiposLibros() {
+        return tiposLibros;
     }
 
-    public void setTiposPeliculas(List<TipoPelicula> tiposPeliculas) {
-        this.tiposPeliculas = tiposPeliculas;
-    }*/
+    public void setTiposLibros(List<TipoLibro> tiposLibros) {
+        this.tiposLibros = tiposLibros;
+    }
 }
