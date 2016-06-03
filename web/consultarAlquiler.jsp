@@ -57,6 +57,10 @@
                         }
                     %>
                 </tbody>
+                <tr>
+                                        <td><input type="button" value="back" onClick="location.href = 'gestionarAlq.jsp'" style='width:150px; height:30px'/></td>
+                                    </tr>
             </table>
+                
     </body>
 </html>

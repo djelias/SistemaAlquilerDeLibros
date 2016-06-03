@@ -14,7 +14,7 @@ public class Alquiler {
     
     public String codigo;
     public Ejemplar codigoLibro;
-    public Cliente numeroMembresia;
+    public String numeroMembresia;
     public String fechaAlquiler;
     public String fechaDevolucion;
     public String valorAlquiler;
@@ -23,7 +23,7 @@ public class Alquiler {
     public Alquiler() {
     }
 
-    public Alquiler(String codigo, Ejemplar codigoEjemplar, Cliente numeroMembresia, String fechaAlquiler, String fechaDevolucion, String valorAlquiler, String cantidad) {
+    public Alquiler(String codigo, Ejemplar codigoEjemplar, String numeroMembresia, String fechaAlquiler, String fechaDevolucion, String valorAlquiler, String cantidad) {
         this.codigo = codigo;
         this.codigoLibro = codigoLibro;
         this.numeroMembresia = numeroMembresia;
@@ -49,11 +49,11 @@ public class Alquiler {
         this.codigoLibro = codigoLibro;
     }
 
-    public Cliente getNumeroMembresia() {
+    public String getNumeroMembresia() {
         return numeroMembresia;
     }
 
-    public void setNumeroMembresia(Cliente numeroMembresia) {
+    public void setNumeroMembresia(String numeroMembresia) {
         this.numeroMembresia = numeroMembresia;
     }
 

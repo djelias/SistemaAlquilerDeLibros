@@ -30,7 +30,7 @@ public class AlquilerDB {
             while (resultado.next()) {
                 Alquiler alquiler = new Alquiler();
                 alquiler.codigo = resultado.getString("codigoalquiler");
-                alquiler.numeroMembresia=ClienteDB.obtenerCliente(resultado.getString("numeromembresia"));
+                alquiler.numeroMembresia=resultado.getString("numeromembresia");
                 alquiler.fechaAlquiler = resultado.getString("fechaAlquiler");
                 alquiler.fechaDevolucion = resultado.getString("fechaDevolucion");
                 alquiler.valorAlquiler = resultado.getString("valorAlquiler");
@@ -57,7 +57,7 @@ public class AlquilerDB {
              while (resultado.next()) {                 
                  alquiler = new Alquiler();       
                  alquiler.codigo=resultado.getString("codigoalquiler");
-                 alquiler.numeroMembresia = ClienteDB.obtenerCliente(resultado.getString("numeromembresia"));
+                 alquiler.numeroMembresia = resultado.getString("numeromembresia");
                  alquiler.fechaAlquiler = resultado.getString("fechaalquiler");
                  alquiler.fechaDevolucion = resultado.getString("fechadevolucion");
                  alquiler.valorAlquiler = resultado.getString("valoralquiler");
@@ -70,12 +70,12 @@ public class AlquilerDB {
          return alquiler;     
      }
     
-    public boolean guardar(String codigo, String fechaAlquiler, String fechaDevolucion, String valorAlquiler, String cantidad, String codigoEjemplar, String numeroMembresia) {
+    public boolean guardar(String codigo, String numeroMembresia, String fechaAlquiler, String fechaDevolucion, String valorAlquiler, String cantidad) {
         boolean guardado = true;
         try {
             String sentenciaSql;
             PreparedStatement preparedStatement;
-            sentenciaSql = "INSERT INTO alquiler(codigo, numeroMembresia,fechaAlquiler, fechaDevolucion, valorAlquiler, cantidad) VALUES "
+            sentenciaSql = "INSERT INTO alquiler(codigoalquiler, numeromembresia, fechaalquiler, fechadevolucion, valoralquiler, cantidad) VALUES "
                     + "(?,?,?,?,?,?)";
             preparedStatement = Conexion.getConexion().prepareStatement(sentenciaSql);
             preparedStatement.setString(1, codigo);
@@ -91,6 +91,31 @@ public class AlquilerDB {
             ex.printStackTrace();
         }
         return guardado;
+    }
+    
+    public boolean actualizar(String codigo, String numeroMembresia, String fechaAlquiler, String fechaDevolucion, String valorAlquiler, String cantidad) {
+        
+        boolean actualizado = true;
+        
+        try {  
+
+            String sentenciaSql = "UPDATE alquiler SET numeromembresia = ?, fechaalquiler = ?, fechadevolucion = ?, valoralquiler = ?, cantidad = ? WHERE codigoalquiler = ?";
+            
+            PreparedStatement updateAlquiler = Conexion.getConexion().prepareStatement(sentenciaSql);
+            updateAlquiler.setString(6, codigo);
+            updateAlquiler.setString(1, numeroMembresia);
+            updateAlquiler.setString(2, fechaAlquiler);
+            updateAlquiler.setString(3, fechaDevolucion);
+            updateAlquiler.setString(4, valorAlquiler);
+            updateAlquiler.setString(5, cantidad);
+                               
+            updateAlquiler.executeUpdate();
+            
+        } catch (SQLException ex) {
+            actualizado = false;
+            ex.printStackTrace();
+        }
+        return actualizado;
     }
 
     /**
