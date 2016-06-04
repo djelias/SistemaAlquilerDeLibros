@@ -6,6 +6,7 @@
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/marketing4.jsp</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/catalogo.jsp</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/informatica2.jsp</file>
+            <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/src/java/AlquilerLibroDB/TipoLibroDB.java</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/marketing1.jsp</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/src/java/AlquilerLibroDB/AlquilerDB.java</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/marketing2.jsp</file>
@@ -14,8 +15,13 @@
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/src/java/AlquilerLibroModelo/Libro.java</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/modificarAlquiler.jsp</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/informatica4.jsp</file>
+            <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/src/java/AlquilerLibroDB/ClienteDB.java</file>
+            <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/src/java/AlquilerLibroModelo/Alquiler.java</file>
+            <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/src/java/AlquilerLibroDB/Conexion.java</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/ficcion2.jsp</file>
+            <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/src/java/AlquilerLibroModelo/Cliente.java</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/ficcion1.jsp</file>
+            <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/consultarAlquiler.jsp</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/agregarAlquiler.jsp</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/web/informatica1.jsp</file>
             <file>file:/C:/Users/Marvin/Desktop/SYPCompiti/SistemaAlquilerDeLibros/src/java/AlquilerLibroDB/EjemplarDB.java</file>
