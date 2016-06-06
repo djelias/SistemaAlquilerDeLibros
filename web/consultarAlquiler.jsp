@@ -27,8 +27,8 @@
         <title>Consulta Alquiler</title>
     </head>
     
-    <body background="imagen9.jpg" align="center">
-        <h1>TABLA DE ALQUILERES EN EL SISTEMA</h1>
+    <body background="imagen8.jpg" align="center">
+        <h1 style="color: skyblue">TABLA DE ALQUILERES EN EL SISTEMA</h1>
             <table border="1" align="center" >
                 <thead>
                     <tr>
@@ -45,12 +45,12 @@
                         for (Alquiler alquiler : alquilerDB.getAlquileres()) {
                     %>
                     <tr>
-                        <td><%=alquiler.codigo%></td>
-                        <td><%=alquiler.numeroMembresia%></td>
-                        <td><%=alquiler.fechaAlquiler%></td>
-                        <td><%=alquiler.fechaDevolucion%></td>
-                        <td><%=alquiler.valorAlquiler%></td>
-                        <td><%=alquiler.cantidad%></td>
+                        <td style="color: white"><%=alquiler.codigo%></td>
+                        <td style="color: white"><%=alquiler.numeroMembresia%></td>
+                        <td style="color: white"><%=alquiler.fechaAlquiler%></td>
+                        <td style="color: white"><%=alquiler.fechaDevolucion%></td>
+                        <td style="color: white"><%=alquiler.valorAlquiler%></td>
+                        <td style="color: white"><%=alquiler.cantidad%></td>
                         
                     </tr>
                     <%

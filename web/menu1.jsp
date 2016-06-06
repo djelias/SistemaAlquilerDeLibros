@@ -9,10 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Libros</title>
     </head>
     <body>
-        <h1>GESTIONAR LIBROS</h1>
+        <body background="fondoMenu.jpg">
+        <h1 align="center">GESTIONAR LIBROS</h1>
         <form action="validar.jsp"  method="POST">
                 <table border="0" width="20" align="center" cellspacing="30">
                     <tbody>

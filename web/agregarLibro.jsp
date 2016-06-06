@@ -14,7 +14,7 @@
 <%  
     if (request.getParameter("cmd") == null) {         
         //editorialBd.obtenerEditoriales();         
-        libroBd.obtenerLibros();     
+       // libroBd.obtenerLibros();     
     } else {
         //INVOCA LOS BOTONES QUE CONTENDRA
         if (request.getParameter("cmd").equals("guardar")) 
@@ -34,12 +34,14 @@
                         if (libroBd.guardar(codigoL, idTipo, autor, titulo)) 
                         {
                             out.print("<strong>Guardado</strong>");
-                            libroBd.obtenerLibros();
-                        } else {
+                           // libroBd.obtenerLibros();
+                        } else 
+                        
+                        {
 
                             out.print("<strong>Ocurrió un error al guardar</strong>");
                         }
-                    }//FINALIZA BOTON GUARDAR
+                    }       //FINALIZA BOTON GUARDAR
                 } 
            }else 
                                 {
@@ -90,8 +92,8 @@
                     </tr>
                 </tbody>
                 <tfoot>
-                    <tr><td><input type="submit" value="Guardar" onclick="asignarAccion('guardar')" style='width:250px; height:50px'/></td></tr>
-                    <tr><td><input type="button" value="Regresar" onClick="location.href = 'gestionar.jsp'" style='width:250px; height:50px'/></td></tr>
+                    <tr><td><input type="submit" value="Guardar" onclick="asignarAccion('guardar')" style='width:250px; height:50px'/></td>
+                    <td><input type="button" value="Regresar" onClick="location.href = 'gestionar.jsp'" style='width:250px; height:50px'/></td></tr>
                 </tfoot>
             </table>
              <input name="cmd" type="hidden"/>

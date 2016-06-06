@@ -12,7 +12,7 @@
         <title>Eliminar Alquiler</title>
     </head>
     <body>
-        <body background="libroz.jpg" align="center">
+        <body background="imagen7.jpg" align="center">
             <h1 style="color: springgreen">SELECCIONE EL ALQUILER A ELIMINAR</h1>
         <form action="validar.jsp" method="POST">
             <table border="2" width="70" align="center" cellspacing="30">

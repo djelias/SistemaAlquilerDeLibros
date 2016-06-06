@@ -61,8 +61,8 @@
         </script>
     </head>
     
-    <body background="imagen9.jpg" align="center">
-        <h1 style="color: yellow">SELECCIONE EL ALQUILER A ACTUALIZAR</h1>
+    <body background="imagen10.jpg" align="center">
+        <h1 style="color: white">SELECCIONE EL ALQUILER A ACTUALIZAR</h1>
         <form id="alquilerfrm">
             <table border="3" cellspacing="10">
                 <thead>
@@ -108,27 +108,27 @@
                         <td> <table border="2" width="30" align="center" cellspacing="30" >
                                 <tbody>
                                     <tr>
-                                        <td style="color:springgreen" >Codigo Alquiler</td>
+                                        <td style="color:red" >Codigo Alquiler</td>
                                         <td><input type="text" name="codigotxt" value="" style="font-size:20px"/></td>
                                     </tr>
                                     <tr>
-                                        <td style="color:springgreen">Numero Membresia</td>
+                                        <td style="color:red">Numero Membresia</td>
                                         <td><input type="text" name="numerotxt" value="" style="font-size:20px"/></td>
                                     </tr>
                                     <tr>
-                                        <td style="color:springgreen">Fecha Alquiler</td>
+                                        <td style="color:red">Fecha Alquiler</td>
                                         <td><input type="text" name="fechaalquilertxt" value="" style="font-size:20px"/></td>
                                     </tr>
                                     <tr>
-                                        <td style="color:springgreen">Fecha Devolucion</td>
+                                        <td style="color:red">Fecha Devolucion</td>
                                         <td><input type="text" name="fechadevoluciontxt" value="" style="font-size:20px"/></td>
                                     </tr>
                                     <tr>
-                                        <td style="color:springgreen">Valor Alquiler</td>
+                                        <td style="color:red">Valor Alquiler</td>
                                         <td><input type="text" name="valoralquilertxt" value="0" style="font-size:20px"/></td>
                                     </tr>
                                     <tr>
-                                        <td style="color:springgreen">Cantidad</td>
+                                        <td style="color:red">Cantidad</td>
                                         <td><input type="text" name="cantidadtxt" value="0" style="font-size:20px"/></td>
                                     </tr>
                                     <tr>

@@ -18,7 +18,7 @@ function newPage(url){
 window.open(url,"","algun parametro que desees");
 }
 </script>
-        <body background="book11.jpg">
+        <body background="fondoMenu.jpg">
         <h1 align="center" style="color:red;">MENU PARA ADMINISTRADOR</h1>
         <form action="validar.jsp"  method="POST">
                 <table border="0" width="20" align="center" cellspacing="30">

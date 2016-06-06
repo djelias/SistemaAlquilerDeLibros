@@ -15,17 +15,24 @@ public class TipoLibro {
     public String idTipoLibro;
     public String categoria;
     public String idioma;
+
+   
+    
+    
     
     public TipoLibro(String idTipoLibro, String categoria, String idioma) {
         this.idTipoLibro = idTipoLibro;
         this.categoria = categoria;
         this.idioma = idioma;
     }
-    
+   
     public TipoLibro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
-
+    
+    
+    
+    
      public String getIdTipoLibro() {
         return idTipoLibro;
     }
@@ -52,6 +59,6 @@ public class TipoLibro {
     
     @Override
     public String toString() {
-        return "TipoLibro{" + "idTipoLibro=" + idTipoLibro + ", categoria=" + categoria + ", idioma=" + idioma + '}';
+        return "" + "" + idTipoLibro ;
     }
 }

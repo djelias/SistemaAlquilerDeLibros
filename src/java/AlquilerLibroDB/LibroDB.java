@@ -13,6 +13,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -30,7 +32,7 @@ public class LibroDB {
             while (resultado.next()) {
                 Libro libro = new Libro();
                 libro.codigoL = resultado.getString("codigolibro");
-                //libro.idTipo = TipoLibroDB.obtenerTipoLibro(resultado.getString("idtipolibro"));
+                libro.idTipo = TipoLibroDB.obtenerTipoLibro(resultado.getString("idtipolibro"));
                 libro.autor = resultado.getString("autor");
                 libro.titulo = resultado.getString("titulo");
                 
@@ -51,7 +53,7 @@ public class LibroDB {
              while (resultado.next()) {                 
                  libro = new Libro();                 
                  libro.codigoL = resultado.getString("codigolibro");                 
-                 libro.idTipo = TipoLibroDB.obtenerTipoLibro(resultado.getString("nomeditorial")); 
+                 libro.idTipo = TipoLibroDB.obtenerTipoLibro(resultado.getString("idtipolibro")); 
                  libro.autor=resultado.getString("autor");
                  libro.titulo=resultado.getString("titulo");
              }  
@@ -61,7 +63,7 @@ public class LibroDB {
          return libro;     
      } 
 
-    public boolean guardar(String codigoL, String idtipolibro, String autor, String titulo) {
+    public boolean guardar(String codigo, String tipo, String autor, String titulo) {
         boolean guardado = true;
         try {
             String sentenciaSql;
@@ -69,8 +71,8 @@ public class LibroDB {
             sentenciaSql = "INSERT INTO libro(codigolibro, idtipolibro, autor, titulo) VALUES "
                     + "(?,?,?,?)";
             preparedStatement = Conexion.getConexion().prepareStatement(sentenciaSql);
-            preparedStatement.setString(1, codigoL);
-            preparedStatement.setString(2, idtipolibro);
+            preparedStatement.setString(1, codigo);
+            preparedStatement.setString(2, tipo);
             preparedStatement.setString(3, autor);
             preparedStatement.setString(4, titulo);
             
@@ -81,7 +83,26 @@ public class LibroDB {
         }
         return guardado;
     }
-
+ public boolean actualizar(String codigo, String tipo, String autor, String titulo){
+        boolean actu = true;
+        try {
+            int a;
+            String sentenciaSql = "UPDATE libro SET idtipolibro = ?, autor = ? , titulo = ?  WHERE codigolibro = ?";
+            PreparedStatement preparedStatement = Conexion.getConexion().prepareStatement(sentenciaSql);
+            preparedStatement.setString(1,tipo);            
+            preparedStatement.setString(2, autor);
+            preparedStatement.setString(3,titulo);
+             preparedStatement.setString(4,codigo);
+            a = preparedStatement.executeUpdate();
+            if(a > 0)
+                actu = true;
+            else
+                actu = false;
+        } catch (SQLException ex) {
+            Logger.getLogger(LibroDB.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return actu;
+    }
     /**
      * @return the carreras
      */
@@ -90,7 +111,7 @@ public class LibroDB {
     }
 
     /**
-     * @param libro the alquileres to set
+     * @param libros
      */
     public void setLibros(List<Libro> libros) {
         this.libros = libros;

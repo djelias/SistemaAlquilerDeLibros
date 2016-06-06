@@ -13,8 +13,8 @@ package AlquilerLibroModelo;
 public class Alquiler {
     
     public String codigo;
-    public Ejemplar codigoLibro;
-    public String numeroMembresia;
+    //public Ejemplar codigoLibro;
+    public Cliente numeroMembresia;
     public String fechaAlquiler;
     public String fechaDevolucion;
     public String valorAlquiler;
@@ -23,9 +23,8 @@ public class Alquiler {
     public Alquiler() {
     }
 
-    public Alquiler(String codigo, Ejemplar codigoEjemplar, String numeroMembresia, String fechaAlquiler, String fechaDevolucion, String valorAlquiler, String cantidad) {
+    public Alquiler(String codigo, Cliente numeroMembresia, String fechaAlquiler, String fechaDevolucion, String valorAlquiler, String cantidad) {
         this.codigo = codigo;
-        this.codigoLibro = codigoLibro;
         this.numeroMembresia = numeroMembresia;
         this.fechaAlquiler = fechaAlquiler;
         this.fechaDevolucion = fechaDevolucion;
@@ -41,19 +40,11 @@ public class Alquiler {
         this.codigo = codigo;
     }
 
-    public Ejemplar getCodigoLibro() {
-        return codigoLibro;
-    }
-
-    public void setCodigoLibro(Ejemplar codigoLibro) {
-        this.codigoLibro = codigoLibro;
-    }
-
-    public String getNumeroMembresia() {
+    public Cliente getNumeroMembresia() {
         return numeroMembresia;
     }
 
-    public void setNumeroMembresia(String numeroMembresia) {
+    public void setNumeroMembresia(Cliente numeroMembresia) {
         this.numeroMembresia = numeroMembresia;
     }
 
@@ -91,8 +82,8 @@ public class Alquiler {
 
     @Override
     public String toString() {
-        return "Alquiler{" + "codigo=" + codigo + ", codigoLibro=" + codigoLibro + ", numeroMembresia=" + numeroMembresia + ", fechaAlquiler=" + fechaAlquiler + ", fechaDevolucion=" + fechaDevolucion + ", valorAlquiler=" + valorAlquiler + ", cantidad=" + cantidad + '}';
+        return "Alquiler{" + "codigo=" + codigo + ", numeroMembresia=" + numeroMembresia + ", fechaAlquiler=" + fechaAlquiler + ", fechaDevolucion=" + fechaDevolucion + ", valorAlquiler=" + valorAlquiler + ", cantidad=" + cantidad + '}';
     }
 
-    
+   
 }

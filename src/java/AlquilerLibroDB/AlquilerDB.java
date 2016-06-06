@@ -30,10 +30,10 @@ public class AlquilerDB {
             while (resultado.next()) {
                 Alquiler alquiler = new Alquiler();
                 alquiler.codigo = resultado.getString("codigoalquiler");
-                alquiler.numeroMembresia=resultado.getString("numeromembresia");
-                alquiler.fechaAlquiler = resultado.getString("fechaAlquiler");
-                alquiler.fechaDevolucion = resultado.getString("fechaDevolucion");
-                alquiler.valorAlquiler = resultado.getString("valorAlquiler");
+                alquiler.numeroMembresia=ClienteDB.obtenerCliente(resultado.getString("numeromembresia"));
+                alquiler.fechaAlquiler = resultado.getString("fechaalquiler");
+                alquiler.fechaDevolucion = resultado.getString("fechadevolucion");
+                alquiler.valorAlquiler = resultado.getString("valoralquiler");
                 alquiler.cantidad = resultado.getString("cantidad");
                 
                 
@@ -57,7 +57,7 @@ public class AlquilerDB {
              while (resultado.next()) {                 
                  alquiler = new Alquiler();       
                  alquiler.codigo=resultado.getString("codigoalquiler");
-                 alquiler.numeroMembresia = resultado.getString("numeromembresia");
+                 alquiler.numeroMembresia = ClienteDB.obtenerCliente(resultado.getString("numeromembresia"));
                  alquiler.fechaAlquiler = resultado.getString("fechaalquiler");
                  alquiler.fechaDevolucion = resultado.getString("fechadevolucion");
                  alquiler.valorAlquiler = resultado.getString("valoralquiler");

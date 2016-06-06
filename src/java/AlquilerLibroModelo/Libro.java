@@ -12,27 +12,27 @@ package AlquilerLibroModelo;
  */
 public class Libro {
     
-    public String autor;
-    public TipoLibro idTipo;
     public String codigoL;
+      public TipoLibro idTipo;
+      public String autor;
     public String titulo;
 
     public Libro() {
     }
 
-    public Libro(String autor, TipoLibro idTipo, String codigoL, String titulo) {
-        this.autor = autor;
-        this.idTipo = idTipo;
+    public Libro(String codigoL, TipoLibro idTipo, String autor, String titulo) {
         this.codigoL = codigoL;
+        this.idTipo = idTipo;
+        this.autor = autor;
         this.titulo = titulo;
     }
 
-    public String getAutor() {
-        return autor;
+    public String getCodigoL() {
+        return codigoL;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public void setCodigoL(String codigoL) {
+        this.codigoL = codigoL;
     }
 
     public TipoLibro getIdTipo() {
@@ -43,12 +43,12 @@ public class Libro {
         this.idTipo = idTipo;
     }
 
-    public String getCodigoL() {
-        return codigoL;
+    public String getAutor() {
+        return autor;
     }
 
-    public void setCodigoL(String codigoL) {
-        this.codigoL = codigoL;
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
     public String getTitulo() {
@@ -61,9 +61,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{" + "autor=" + autor + ", idTipo=" + idTipo + ", codigoL=" + codigoL + ", titulo=" + titulo + '}';
+        return "Libro{" + "codigoL=" + codigoL + ", idTipo=" + idTipo + ", autor=" + autor + ", titulo=" + titulo + '}';
     }
-    
-    
-    
+
 }

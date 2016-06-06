@@ -29,10 +29,13 @@ public class TipoLibroDB {
             Statement statement = Conexion.getConexion().createStatement();
             ResultSet resultado = statement.executeQuery(sentenciaSql);
             while (resultado.next()) {
+                
                 TipoLibro tipoLibro = new TipoLibro();
+                
                 tipoLibro.idTipoLibro = resultado.getString("idtipolibro");
                 tipoLibro.categoria = resultado.getString("categoria");
                 tipoLibro.idioma = resultado.getString("idioma");
+                
                 getTiposLibros().add(tipoLibro);
             }
         } catch (SQLException ex) {
